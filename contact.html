@@ -24,17 +24,17 @@
                 <button class="btn btn-primary icon-size"><i class="fa-brands fa-x-twitter fa-sm "></i></button>
                 <button class="btn btn-primary icon-size"><i class="fa-brands fa-facebook-f fa-sm "></i></button>
             </div>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="" aria-labelledby="offcanvasNavbarLabel">
 
                 <div class="row justify-content-evenly ">
                     <div class="col-md-6  text-end"> Training for the food industry</div>
                     <div class="col-md-6  text-end ">
                         <span class="mx-2">
                             <span class="icon"><i class="fa-solid fa-phone"></i></span>
-                            <span class="p-2">450 304-4377</span></span>
+                            <span>450 304-4377</span></span>
                         <span class="mx-2">
-                            <span class="p-2"><i class="fa-regular fa-envelope "></i></span>
-                            <span class="p-2">info@innovaltech.ca</span>
+                            <span><i class="fa-regular fa-envelope "></i></span>
+                            <span>info@innovaltech.ca</span>
                         </span>
                     </div>
                 </div>
@@ -43,16 +43,15 @@
     </div>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg z-3 sticky-top w-100  px-2">
+    <nav class="navbar navbar-expand-lg z-3 sticky-top w-100">
         <div class="container-fluid">
 
             <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"> <img src="./assets/images/logo.png" class="img-fluid" alt=""
-                    class="img-fluid"></a>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            <a class="navbar-brand" href="#"> <img src="./assets/images/logo.png" class="img-fluid" alt=""></a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
@@ -60,17 +59,17 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-4">
-                        <li><a href="./index.html" class="text-dark"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="./index.html" class="text-dark"><i class="fa-solid fa-house"  ></i></a></li>
                         <li><a href="./service.html" class="text-dark">Services</a></li>
                         <li>Training</li>
                         <li><a href="./customer.html" class="text-dark">Customers</a></li>
                         <li><a href="./news.html" class="text-dark">News</a></li>
                         <li><a href="./about.html" class="text-dark">About</a></li>
-                        <li><a href="./faq.html" class="text-dark">FAQ</a></li>
-                        <li><a href="./contact.html" class="text-dark">Contact Us</a></li>
-
+                         <li><a href="./faq.html" class="text-dark">FAQ</a></li>
+                         <li><a href="./contact.html" class="text-dark">Contact Us</a></li>
                     </ul>
-
+                    </li>
+                    </ul>
 
                 </div>
 
@@ -124,7 +123,7 @@
     </div>
 
     <div class="row w-100 m-0 py-5 justify-content-evenly bg-secondary bg-opacity-10">
-        <div class="col-md-4">
+        <div class="col-lg-5">
             <h1 class="text-primary">Our contact details</h1>
             <div class="row gap-4">
                 <div>
@@ -145,11 +144,11 @@
             <div class="py-4">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.112203175615!2d-72.7498329!3d46.5454672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc64c1ed777d755%3A0xe668315d222b4941!2s1250%20Av.%20de%20la%20Station%2C%20Shawinigan%2C%20QC%20G9N%201W8%2C%20Canada!5e0!3m2!1sen!2s!4v1731066253067!5m2!1sen!2s"
-                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    class="map" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <div class="col-md-6 bg-white p-5 rounded">
+        <div class="col-lg-6 bg-white p-5 rounded">
             <form id="form" onsubmit="()=>submit(e)" novalidate>
                 <input type="text" id="name" placeholder="Your full name"
                     class="d-block w-100 border-bottom border-2 form-input p-1 my-3 border-primary border-0">
