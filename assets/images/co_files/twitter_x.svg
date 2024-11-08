@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="23.795" height="23.795" viewBox="0 0 23.795 23.795" xmlns="http://www.w3.org/2000/svg">
+  <path class="st0" d="M 21.02 23.778 L 2.782 23.778 C 1.25 23.778 0.009 22.538 0.009 21.009 L 0.009 2.791 C 0.009 1.26 1.25 0.021 2.782 0.021 L 21.019 0.021 C 22.551 0.021 23.794 1.26 23.794 2.791 L 23.794 21.008 C 23.794 22.538 22.552 23.778 21.02 23.778 Z" style="fill: rgb(0, 149, 235); stroke: rgb(255, 255, 255); stroke-miterlimit: 10; fill-rule: evenodd; paint-order: stroke markers; stroke-width: 0px;"/>
+  <g id="layer1" transform="matrix(0.016168, 0, 0, 0.016372, -0.718216, 0.862452)" style="">
+    <path id="path1009" class="st1" d="M491.03,374.75L721.1,682.38L489.58,932.49h52.11l202.7-218.98l163.77,218.98h177.32 L842.46,607.56l215.5-232.81h-52.11L819.18,576.42L668.35,374.75H491.03z M567.66,413.14h81.46l359.72,480.97h-81.46L567.66,413.14 z" style="fill: rgb(255, 255, 255); paint-order: stroke markers;"/>
+  </g>
+</svg>
