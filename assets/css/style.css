@@ -65,7 +65,7 @@ ul {
 }
 
 .main-hero{
-  background: url('../images/main-banner.jpg') no-repeat;
+  background: url('../images/bg.jpg') no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -280px fixed, center, center;
