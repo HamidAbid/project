@@ -184,3 +184,19 @@ service page */
     font-size: 14px;
   }
 }
+.form-input::placeholder,.form-input>option{
+color: #0D6EFD !important;
+outline: none;
+}
+.form-input:focus{
+ outline: none;
+ box-shadow: none;
+}
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+  color: #0D6EFD;
+  border: none;
+  outline: none;
+}
+.error{
+  color: red;
+}
