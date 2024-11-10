@@ -50,11 +50,13 @@ ul {
   }
 .navbar{
     height: 85px;
-    
+    position: relative;
 }
 .navbar-brand{
   max-width: 130px;
 }
+
+
 @media only screen and (max-width:400px) {
   .navbar-brand{
     max-width: 100px;
@@ -70,7 +72,7 @@ ul {
     background-size: cover;
     background-position: -280px fixed, center, center;
     position: relative;
-     top: -80px;
+     top: -85px;
 }
 .hero-bg{
   background: linear-gradient(to top, rgba(0, 0, 0, 0.89),rgba(255, 255, 255, 0.527));
@@ -166,12 +168,17 @@ service page */
 
 .side-bar{
   display: none;
+
 }
+
 @media only screen and (min-width:992px) {
  .side-bar{
   display: block !important;
+  position: relative;
  }
+ 
 }
+
 
 .card:hover{
   box-shadow: 0px 0px 15px 0.1px rgba(0, 0, 255, 0.521);
@@ -274,3 +281,14 @@ outline: none;
     height: 200px;
   }
 }
+.training-card{
+  box-shadow: 0px 0px 1px 0.1px rgba(0, 0, 255, 0.521);
+  
+}
+.training-card:hover{
+  box-shadow: 0px 0px 15px 0.1px rgba(0, 0, 255, 0.521);
+  transform: scale(1.001);
+  transition: 0.3s ease;
+}
+
+/* calendar */
