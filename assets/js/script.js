@@ -58,7 +58,7 @@ if (name.value == '' || !regex.test(email.value) || email.value == '' ||  busine
 }
 else{
  
- console.log('janan');
+ console.log('hello');
 }
 
    

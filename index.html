@@ -34,7 +34,7 @@
                             <span>450 304-4377</span></span>
                         <span class="mx-2">
                             <span><i class="fa-regular fa-envelope "></i></span>
-                            <span>info@MJA Food safety.ca</span>
+                            <span>info@MJAfoodsafety.ca</span>
                         </span>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-
+<!-- navbar -->
     <nav class="navbar navbar-expand-lg z-3 sticky-top w-100  px-2">
         <div class="container-fluid">
 
@@ -60,13 +60,22 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-4">
                         <li><a href="./index.html" class="text-dark"><i class="fa-solid fa-house"></i></a></li>
-                        <li><a href="./service.html" class="text-dark">Services</a></li>
+                        <li class="nav-item dropdown m-0 p-0 "><a href="./service.html" class="text-dark">Services</a>
+                            <a class=" text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 
+                           </a>
+                            
+                            <ul class="dropdown-menu dropdown-menu">
+                                <li><a class="dropdown-item  border-bottom" href="./haccp-et-gfsi.html">HACCP and GFSI</a></li>
+                                <li><a class="dropdown-item  border-bottom" href="./audits.html">Audits</a></li>
+                                 <li><a class="dropdown-item  " href="./consulting.html">Consulting services</a>
+                            </ul>  </li>   
 
-                        <li class="nav-item dropdown m-0 p-0 "><a href="./training.html" class="text-dark">Training</a>
+                            <li class="nav-item dropdown m-0 p-0 "><a href="./training.html" class="text-dark">Training</a>
                             <a class=" text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 
                             </a>
+                            
                             <ul class="dropdown-menu dropdown-menu">
                                 <li><a class="dropdown-item  border-bottom" href="./haccp.html">HACCP Course</a></li>
                                 <li><a class="dropdown-item  border-bottom" href="./gfsi.html">GFSI: SQF, FSSC 22000,
@@ -76,9 +85,10 @@
                                 <li><a class="dropdown-item  border-bottom" href="./fsma.html">FSMA: PCQI</a></li>
                                 <li><a class="dropdown-item  " href="./commplemantry.html">HACCP/GFSI Complemantry
                                         Course</a></li>
-                            </ul>  </li>
+                            </ul>  </li> 
+                            
                         <li><a href="./customer.html" class="text-dark ">Customers</a></li>
-                        <li><a href="./news.html" class="text-dark">News</a></li>
+                            <li><a href="./news.html" class="text-dark">News</a></li> 
                         <li><a href="./about.html" class="text-dark">About</a></li>
                         <li><a href="./faq.html" class="text-dark">FAQ</a></li>
                         <li><a href="./contact.html" class="text-dark">Contact Us</a></li>
@@ -88,11 +98,11 @@
                 </div>
 
             </div>
-            <div class="nav-icons">
-                <span class="px-1"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-                <span class="px-1"><i class="fa-regular fa-heart fa-lg"></i></span>
+            <div class="nav-icons d-flex gap-2">
+                  <span class="px-1"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                <!-- <span class="px-1"><i class="fa-regular fa-heart fa-lg"></i></span> -->
                 <span class="px-1"><i class="fa-solid fa-bag-shopping fa-lg"></i></span>
-                <span class="px-1"> <i class="fa-regular fa-user fa-lg "></i></span>
+                <!-- <span class="px-1"> <i class="fa-regular fa-user fa-lg "></i></span> -->
             </div>
         </div>
     </nav>
@@ -115,13 +125,13 @@
                                     class="fs-4 ps-1">Discover MJA Food safety</span></button>
 
                         </div>
-                        <div class=" p-1  ">
+                        <!-- <div class=" p-1  ">
                             <button class="btn arrow-btn p-0 pe-2  text-start"><i
                                     class="fa-solid fa-arrow-right fa-2xl px-3 btn p-4 text-primary bg-white"></i><span
                                     class="fs-4 ps-2">Discover our Training course</span> </button>
 
 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -151,7 +161,7 @@
 
 
     <!-- state -->
-    <div class="row w-100 my-5 fs-3 pt-4 fw-bold text-center justify-content-center">
+    <!-- <div class="row w-100 my-5 fs-3 pt-4 fw-bold text-center justify-content-center">
         <a href="" class="state-a col-xl-3 col-md-5">
             <img src="./assets/images/img3.webp" height="200px" alt="">
             <p class='py-2 state-btn'>HCCP and GFSI</p>
@@ -170,7 +180,7 @@
             <p class='py-2 state-btn'>Training</p>
             <button class="btn btn-secondary bg-dark learn-btn">Learn more</button>
         </a>
-    </div>
+    </div> -->
 
 
     <!-- who we are  -->
@@ -187,7 +197,7 @@
                 Through our continued commitment to innovation, MJA Food safety has become a leader in its field. We are
                 proud of what we have accomplished and continue to emphasize a culture of safety and quality in
                 everything we do.</p>
-            <button class="btn btn-primary">Discover MJA Food safety</button>
+            <a href="./about.html" class="btn btn-outline-primary">Discover MJA Food safety</a>
         </div>
         <div class="col-md-5 pt-5">
             <img src="./assets/images/img1.jpg"  class="img-fluid" alt="">
@@ -196,12 +206,12 @@
 
     <!-- news -->
 
-    <div class="row w-100 justify-content-evenly my-3 p-2 ">
+    <!-- <div class="row w-100 justify-content-evenly my-3 p-2 ">
         <div class="col-xl-5   news-heading">
             <h1 class="hero-head text-primary fw-bold ">Latest news</h1>
             <p>Discover our latest news and updates on food safety and innovations in the food industry. To view all our
                 news, please use the link below:</p>
-            <button class="btn text-primary fs-5">See all news</button>
+             <a href="./news.html" class="btn btn-outline-primary fs-5">See all news</a> 
         </div>
         <div class="col-md-6">
             <div class="row gap-4 justify-content-center gap-4">
@@ -231,7 +241,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Food Safety -->
@@ -241,7 +251,7 @@
             <div class="col-md-7 py-3 p-1"><img src="./assets/images/foodsafety.svg" class="img-fluid" alt=""></div>
             <div class="col-md-5 fs-1 fw-bold text-white">Develope Your <span class="fw-bolder">Food Safety
                     Skills!</span> <br>
-                <button class=" btn blue-btn mt-2">Our Trainig Course</button>
+                <!-- <button class=" btn blue-btn mt-2">Our Trainig Course</button> -->
             </div>
 
         </div>
@@ -388,7 +398,7 @@
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-orange">
                                     1-877-688-4377</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-orange">
-                                    info@MJA Food safety.ca</a></li>
+                                    info@MJAfoodsafety.ca</a></li>
                         </ul>
                     </div>
 
@@ -398,20 +408,16 @@
             <div class="col col-6 my-2">
                 <h5 class="text-primary">About</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About MJA Food safety</a>
+                    <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">About MJA Food safety</a>
                     </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trainings</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Audits</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cancellation
-                            Policy</a></li>
-                    <li class="nav-item mb-2"><a href="./service.html" class="nav-link p-0 text-body-secondary">HACCP and GFSI</a>
-                    </li>
+                   
+                    
                     <li class="nav-item mb-2"><a href="./faq.html" class="nav-link p-0 text-body-secondary">FAQ</a></li>
                     <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-body-secondary">Contact us</a></li>
                 </ul>
             </div>
 
-            <div class="col col-6 my-2">
+            <!-- <div class="col col-6 my-2">
                 <h5 class="text-primary">My Account</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Dashboard</a></li>
@@ -421,7 +427,7 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">My addresses</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Wishlist</a></li>
                 </ul>
-            </div>
+            </div> -->
 
         </footer>
         <div class="container-fluid text-center mb-2">
