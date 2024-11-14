@@ -19,7 +19,7 @@
 <body>
     <div class="header container-fluid navbar-expand-md ">
         <div class="row justify-content-center py-2 px-4">
-            <div class="w-auto col-md-5">
+            <div class="w-auto col-md-6">
                 <button class="btn btn-primary icon-size"><i class="fa-brands fa-linkedin-in fa-sm "></i></button>
                 <button class="btn btn-primary icon-size"><i class="fa-brands fa-x-twitter fa-sm "></i></button>
                 <button class="btn btn-primary icon-size"><i class="fa-brands fa-facebook-f fa-sm "></i></button>
@@ -43,40 +43,128 @@
     </div>
 
     <!-- navbar -->
-     <nav class="navbar navbar-expand-lg z-3 sticky-top w-100  px-2">
+    <nav class="navbar navbar-expand-lg z-3 sticky-top w-100  px-2">
         <div class="container-fluid">
 
-            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="./index.html"> <img src="./assets/images/logo.png" class="img-fluid" alt=""></a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <!-- <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        
+        </button> -->
+
+
+            <div class="aside-bar">
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header ">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">ClOSE MENU</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <a href="./index.html" class="aside-links"> WELCOME</a>
+                        <hr>
+                        <a href="./customer.html" class="aside-links"> CUSTOMERS</a>
+                        <hr>
+                        <div class="accordion  " id="accordionExample">
+                            <div class="accordion-item  border-0">
+
+                                <a class="accordion-button nav-btn aside-links text-dark p-0 " data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Services
+                                </a>
+
+
+                                <div id="collapseOne" class="accordion-collapse collapse aside-links "
+                                    data-bs-parent="#accordionExample ">
+                                    <hr>
+                                    <div class="accordion-body  p-0  ">
+                                        <a href="./haccp-et-gfsi.html" class="aside-links ">HACCP AND GFSI</a>
+                                        <hr>
+                                        <a href="./audits.html" class="aside-links">AUDITS</a>
+                                        <hr>
+                                        <a href="./consulting.html" class="aside-links">CONSULTING SERVICES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="accordion-item  border-0">
+
+                                <a class="accordion-button nav-btn aside-links text-dark p-0" href="./training.html"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Training
+                                </a>
+
+
+                                <div id="collapseTwo" class="accordion-collapse collapse aside-links "
+                                    data-bs-parent="#accordionExample ">
+                                    <hr>
+                                    <div class="accordion-body  p-0  ">
+                                        <a href="./haccp.html" class="aside-links ">HACCP COURSE</a>
+                                        <hr>
+                                        <a href="./gfsi.html" class="aside-links">GFSI: SQF, FSSC 22000, BRCGS</a>
+                                        <hr>
+                                        <a href="./internal.html" class="aside-links">INTERNAL AUDITS</a>
+                                        <hr>
+                                        <a href="./fsma.html" class="aside-links">FSMA: PCQI</a>
+                                        <hr>
+                                        <a href="./commplemantry.html" class="aside-links">HACCP/GFSI COMPLEMENTRY
+                                            COURSES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <a href="./news.html" class="aside-links"> NEWS</a>
+                        <hr>
+                        <a href="./about.html" class="aside-links"> ABOUT</a>
+                        <hr>
+                        <a href="./faq.html" class="aside-links"> FAQ</a>
+                        <hr>
+                        <a href="./contact.html" class="aside-links"> CONTACT US</a>
+                        <hr>
+                        <a href="./index.html" class="aside-links"> WELCOME</a>
+                        <hr>
+
+                        <h5>Need Help? </h5>
+                        <p>Call: 450 304 4377</p>
+                    </div>
+
+
                 </div>
-                <div class="offcanvas-body">
+            </div>
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/logo.png" class="img-fluid" alt=""></a>
+            <div class=' offcanvas offcanvas-end' tabindex="-1" id="" aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-4">
                         <li><a href="./index.html" class="text-dark"><i class="fa-solid fa-house"></i></a></li>
-                        <li class="nav-item dropdown m-0 p-0 "><a href="./service.html" class="text-dark">Services</a>
-                            <a class=" text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-
-                           </a>
-                            
-                            <ul class="dropdown-menu dropdown-menu">
-                                <li><a class="dropdown-item  border-bottom" href="./haccp-et-gfsi.html">HACCP and GFSI</a></li>
-                                <li><a class="dropdown-item  border-bottom" href="./audits.html">Audits</a></li>
-                                 <li><a class="dropdown-item  " href="./consulting.html">Consulting services</a>
-                            </ul>  </li>   
-
-                            <li class="nav-item dropdown m-0 p-0 "><a href="./training.html" class="text-dark">Training</a>
-                            <a class=" text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown m-0 p-0 show">
+                            <a href="./service.html" class="text-dark ">Services</a>
+                           
 
                             </a>
-                            
-                            <ul class="dropdown-menu dropdown-menu">
+                         
+                                <ul class="dropdown-menu hide ">
+                                    <li><a class="dropdown-item  border-bottom" href="./haccp-et-gfsi.html">HACCP and
+                                            GFSI</a></li>
+                                    <li><a class="dropdown-item  border-bottom" href="./audits.html">Audits</a></li>
+                                    <li><a class="dropdown-item  " href="./consulting.html">Consulting services</a>
+                                </ul>
+                           
+
+                        </li>
+
+                        <li class="nav-item dropdown show m-0 p-0 "><a href="./training.html" class="text-dark">Training</a>
+                           
+
+                            <ul class="dropdown-menu hide dropdown-menu">
                                 <li><a class="dropdown-item  border-bottom" href="./haccp.html">HACCP Course</a></li>
                                 <li><a class="dropdown-item  border-bottom" href="./gfsi.html">GFSI: SQF, FSSC 22000,
                                         BRCGS</a></li>
@@ -85,10 +173,11 @@
                                 <li><a class="dropdown-item  border-bottom" href="./fsma.html">FSMA: PCQI</a></li>
                                 <li><a class="dropdown-item  " href="./commplemantry.html">HACCP/GFSI Complemantry
                                         Course</a></li>
-                            </ul>  </li> 
-                            
+                            </ul>
+                        </li>
+
                         <li><a href="./customer.html" class="text-dark ">Customers</a></li>
-                            <li><a href="./news.html" class="text-dark">News</a></li> 
+                        <li><a href="./news.html" class="text-dark">News</a></li>
                         <li><a href="./about.html" class="text-dark">About</a></li>
                         <li><a href="./faq.html" class="text-dark">FAQ</a></li>
                         <li><a href="./contact.html" class="text-dark">Contact Us</a></li>
@@ -99,7 +188,7 @@
 
             </div>
             <div class="nav-icons d-flex gap-2">
-                  <span class="px-1"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                <span class="px-1"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
                 <!-- <span class="px-1"><i class="fa-regular fa-heart fa-lg"></i></span> -->
                 <span class="px-1"><i class="fa-solid fa-bag-shopping fa-lg"></i></span>
                 <!-- <span class="px-1"> <i class="fa-regular fa-user fa-lg "></i></span> -->
@@ -119,65 +208,72 @@
 
     <!-- side bar -->
 
-    <div class="conatiner-fluid">
+    <div class="conatiner-fluid first-para">
         <div class="row p-2 w-100 m-0 justify-content-between">
             <div class="col-lg-3  p-4 side-bar">
-                <h3 class="border-bottom my-1 mb-4">Latest Article</h3>
-                <a href="" class='text-dark d-inline-block text-truncate' style="max-width: 220px;">FDA Renewal 2024:
+
+                <h4 class="border-bottom my-1 mb-4">Latest Article</h4>
+                <a href="" class='training-link d-inline-block text-truncate w-75' >FDA Renewal
+                    2024:
                     Key Info for
                     Food Exporters | MJA Food safety</a><br>
-                <a href="" class='text-dark d-inline-block text-truncate' style="max-width: 220px;">FSSC 22000 version 6
+                <a href="" class='training-link d-inline-block text-truncate w-75'  >FSSC 22000
+                    version 6
                     and ISO
                     22000 | MJA Food safety</a><br>
-                <a href="" class='text-dark d-inline-block text-truncate' style="max-width: 220px;">🚀 FSSC 22000
+                <a href="" class='training-link d-inline-block text-truncate w-75' >🚀 FSSC 22000
                     Version 6
                     recognized by GFSI｜MJA Food safety</a><br>
-                <a href="" class='text-dark d-inline-block text-truncate' style="max-width: 220px;">📢 HACCP & GFSI
+                <a href="" class='training-link d-inline-block text-truncate w-75' >📢 HACCP & GFSI
                     Training -
                     Fall 2024 ｜MJA Food safety</a><br>
-                <a href="" class='text-dark d-inline-block text-truncate' style="max-width: 220px;">🎉 Congratulations
+                <a href="" class='training-link d-inline-block text-truncate w-75' >🎉
+                    Congratulations
                     to Valérie
                     - FSPCA IAVA certified Lead Instructor ｜MJA Food safety</a><br>
 
                 <br>
-                <h3 class="border-bottom my-1 mb-4">Browse Categories</h3>
-                <a href="" class='text-dark'>All Categories</a> <br>
-                <a href="" class='text-dark'>News</a> <br>
-                <a href="" class='text-dark'>SQF</a> <br>
-                <a href="" class='text-dark'>ACIA</a> <br>
-                <a href="" class='text-dark'>Blog</a> <br>
-                <a href="" class='text-dark'>GFSI</a> <br>
-                <a href="" class='text-dark'>FSSC</a> <br>
-                <a href="" class='text-dark'>FDA</a> <br>
-                <a href="" class='text-dark'>Training</a> <br>
-                <a href="" class='text-dark'>HACCP</a> <br>
+                <h4 class="border-bottom my-1 mb-4">Browse Categories</h4>
+                <a href="" class='training-link'>All Categories</a> <br>
+                <a href="./news.html" class='training-link'>News</a> <br>
+                <!-- <a href="" class='training-link'>SQF</a> <br> -->
+                <!-- <a href="" class='training-link'>ACIA</a> <br> -->
+                <!-- <a href="" class='training-link'>Blog</a> <br> -->
+                <a href="./gfsi.html" class='training-link'>GFSI</a> <br>
+                <!-- <a href="fs" class='training-link'>FSSC</a> <br> -->
+                <!-- <a href="." class='training-link'>FDA</a> <br> -->
+                <a href="./training.html" class='training-link'>Training</a> <br>
+                <a href="./haccp.html" class='training-link'>HACCP</a> <br>
             </div>
-            <div class="col-lg-9 p-4 m-0">
+            <div class="col-lg-9 px-2 m-0">
                 <div class="d-flex justify-content-between">
-                     <h1 class="fw-bold">News</h1>
+                    <h1 class="fw-bold">News</h1>
 
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      16
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><button class="dropdown-item" type="button">9</button></li>
-                      <li><button class="dropdown-item" type="button">16</button></li>
-                      <li><button class="dropdown-item" type="button">25</button></li>
-                    </ul>
-                  </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle border" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            16
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">9</button></li>
+                            <li><button class="dropdown-item" type="button">16</button></li>
+                            <li><button class="dropdown-item" type="button">25</button></li>
+                        </ul>
+                    </div>
                 </div>
-               
 
-                <div class="row justify-content-center text-center m-0 p-2 w-100">
-                    <div class="col-md-4  p-2">
-                        <div class="card p-2 py-4 ">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
+
+                <div class="row justify-content-center m-0 p-2 w-100">
+                    <div class="col-md-6">
+                        <div class="card review-img m-2 my-4 p-2py-4 ">
+                            <img src="./assets/images/n1.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
+                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food
+                                    safety
                                 </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
+                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety:
+                                    Essential
                                     for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
                                 <div class="d-flex flex-wrap justify-content-between ">
                                     <a href="#" class="btn orange-btn">Go somewhere</a>
@@ -187,14 +283,109 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
+                    <div class="col-md-6  ">
+                        <div class="card review-img m-2 my-4 p-2py-4">
+                            <img src="./assets/images/n2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
+                                <h5 class='border-bottom'>FSSC 22000 version 6 and ISO 22000 | MAJ Food Safety
+
                                 </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
+                                <p class="card-text pb-5 border-bottom">FSSC 22000 V6 and ISO 22000: adapt to climate
+                                    change. MAJ Food Safety supports you with training and audits for the food industry.</p>
+                                <div class="d-flex flex-wrap justify-content-between ">
+                                    <a href="#" class="btn orange-btn">Go somewhere</a>
+                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  ">
+                        <div class="card review-img m-2 my-4 p-2py-4">
+                            <img src="./assets/images/n3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">oct 15,2024</h6>
+                                <h5 class='border-bottom'>🚀 FSSC 22000 Version 6 recognized by GFSI｜MAJ Food Safety
+
+                                </h5>
+                                <p class="card-text pb-5 border-bottom"> FSSC 22000 V6 recognized by GFSI! MAJ Food Safety
+                                    helps you with training and audits. Contact us to ensure your food compliance!</p>
+                                <div class="d-flex flex-wrap justify-content-between ">
+                                    <a href="#" class="btn orange-btn">Go somewhere</a>
+                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  ">
+                        <div class="card review-img m-2 my-4 p-2py-4 ">
+                            <img src="./assets/images/n4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">oct 15,2024</h6>
+                                <h5 class='border-bottom'>📢 HACCP & GFSI Training - Fall 2024 ｜MAJ Food Safety
+
+                                </h5>
+                                <p class="card-text pb-5 border-bottom">Join HACCP and GFSI courses with MAJ Food Safety
+                                    this fall. Keep your skills up to date and make your audits easier. Register now!
+                                </p>
+                                <div class="d-flex flex-wrap justify-content-between ">
+                                    <a href="#" class="btn orange-btn">Go somewhere</a>
+                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  ">
+                        <div class="card review-img m-2 my-4 p-2py-4">
+                            <img src="./assets/images/n5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">oct 15,2024</h6>
+                                <h5 class='border-bottom'>🎉 Congratulations to Valérie - FSPCA IAVA certified Lead
+                                    Instructor ｜MAJ Food Safety
+                                </h5>
+                                <p class="card-text pb-5 border-bottom">
+                                    Congratulations to Valérie Charest, our FSPCA IAVA certified Lead Instructor in food
+                                    defense!</p>
+                                <div class="d-flex flex-wrap justify-content-between ">
+                                    <a href="#" class="btn orange-btn">Go somewhere</a>
+                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card review-img m-2 my-4 p-2py-4 ">
+                            <img src="./assets/images/n6.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">oct 15,2024</h6>
+                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food
+                                    safety
+                                </h5>
+                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety:
+                                    Essential
+                                    for USA Food Export.FDA 2024 Compliance</p>
+                                <div class="d-flex flex-wrap justify-content-between ">
+                                    <a href="#" class="btn orange-btn">Go somewhere</a>
+                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card review-img m-2 my-4 p-2py-4 ">
+                            <img src="./assets/images/n1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">oct 15,2024</h6>
+                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food
+                                    safety
+                                </h5>
+                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety:
+                                    Essential
                                     for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
                                 <div class="d-flex flex-wrap justify-content-between ">
                                     <a href="#" class="btn orange-btn">Go somewhere</a>
@@ -204,15 +395,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
+                    <div class="col-md-6  ">
+                        <div class="card review-img m-2 my-4 p-2py-4">
+                            <img src="./assets/images/n2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
+                                <h5 class='border-bottom'>FSSC 22000 version 6 and ISO 22000 | MAJ Food Safety
+
                                 </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
+                                <p class="card-text pb-5 border-bottom">FSSC 22000 V6 and ISO 22000: adapt to climate
+                                    change. MAJ Food Safety supports you with training and audits for the food industry.</p>
                                 <div class="d-flex flex-wrap justify-content-between ">
                                     <a href="#" class="btn orange-btn">Go somewhere</a>
                                     <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
@@ -221,15 +413,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4 ">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
+                    <div class="col-md-6  ">
+                        <div class="card review-img m-2 my-4 p-2py-4">
+                            <img src="./assets/images/n3.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
+                                <h5 class='border-bottom'>🚀 FSSC 22000 Version 6 recognized by GFSI｜MAJ Food Safety
+
                                 </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
+                                <p class="card-text pb-5 border-bottom"> FSSC 22000 V6 recognized by GFSI! MAJ Food Safety
+                                    helps you with training and audits. Contact us to ensure your food compliance!</p>
                                 <div class="d-flex flex-wrap justify-content-between ">
                                     <a href="#" class="btn orange-btn">Go somewhere</a>
                                     <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
@@ -238,15 +431,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
+                    <div class="col-md-6  ">
+                        <div class="card review-img m-2 my-4 p-2py-4 ">
+                            <img src="./assets/images/n4.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
+                                <h5 class='border-bottom'>📢 HACCP & GFSI Training - Fall 2024 ｜MAJ Food Safety
+
                                 </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
+                                <p class="card-text pb-5 border-bottom">Join HACCP and GFSI courses with MAJ Food Safety
+                                    this fall. Keep your skills up to date and make your audits easier. Register now!
+                                </p>
                                 <div class="d-flex flex-wrap justify-content-between ">
                                     <a href="#" class="btn orange-btn">Go somewhere</a>
                                     <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
@@ -255,15 +450,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
+                    <div class="col-md-6  ">
+                        <div class="card review-img m-2 my-4 p-2py-4">
+                            <img src="./assets/images/n5.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
+                                <h5 class='border-bottom'>🎉 Congratulations to Valérie - FSPCA IAVA certified Lead
+                                    Instructor ｜MAJ Food Safety
                                 </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
+                                <p class="card-text pb-5 border-bottom">
+                                    Congratulations to Valérie Charest, our FSPCA IAVA certified Lead Instructor in food
+                                    defense!</p>
                                 <div class="d-flex flex-wrap justify-content-between ">
                                     <a href="#" class="btn orange-btn">Go somewhere</a>
                                     <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
@@ -272,15 +469,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4 ">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
+                    <div class="col-md-6">
+                        <div class="card review-img m-2 my-4 p-2py-4 ">
+                            <img src="./assets/images/n6.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
+                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food
+                                    safety
                                 </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
+                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety:
+                                    Essential
+                                    for USA Food Export.FDA 2024 Compliance</p>
                                 <div class="d-flex flex-wrap justify-content-between ">
                                     <a href="#" class="btn orange-btn">Go somewhere</a>
                                     <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
@@ -289,165 +488,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
-                                </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
-                                <div class="d-flex flex-wrap justify-content-between ">
-                                    <a href="#" class="btn orange-btn">Go somewhere</a>
-                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
-                                </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
-                                <div class="d-flex flex-wrap justify-content-between ">
-                                    <a href="#" class="btn orange-btn">Go somewhere</a>
-                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4 ">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
-                                </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
-                                <div class="d-flex flex-wrap justify-content-between ">
-                                    <a href="#" class="btn orange-btn">Go somewhere</a>
-                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
-                                </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
-                                <div class="d-flex flex-wrap justify-content-between ">
-                                    <a href="#" class="btn orange-btn">Go somewhere</a>
-                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
-                                </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
-                                <div class="d-flex flex-wrap justify-content-between ">
-                                    <a href="#" class="btn orange-btn">Go somewhere</a>
-                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4 ">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
-                                </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
-                                <div class="d-flex flex-wrap justify-content-between ">
-                                    <a href="#" class="btn orange-btn">Go somewhere</a>
-                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
-                                </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
-                                <div class="d-flex flex-wrap justify-content-between ">
-                                    <a href="#" class="btn orange-btn">Go somewhere</a>
-                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 p-2  ">
-                        <div class="card p-2 py-4">
-                            <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">oct 15,2024</h6>
-                                <h5 class='border-bottom'>FDA Renewal 2024: Key Info For Food Exporters | MJA Food safety
-                                </h5>
-                                <p class="card-text pb-5 border-bottom">FSPCA PCQI Training by MJA Food safety: Essential
-                                    for USA Food Export. French-speaking experts. FDA 2024 Compliance</p>
-                                <div class="d-flex flex-wrap justify-content-between ">
-                                    <a href="#" class="btn orange-btn">Go somewhere</a>
-                                    <p class="mt-1"><i class="fa-regular fa-eye"></i> 335</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-  <!-- news latter -->
+    <!-- news latter -->
 
-  <div class="container-fluid bg-secondary bg-dark bg-opacity-75 text-white py-5 px-3 pb-4">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <h1 class="fs-2"> Subscribe to our newsletter</h1>
-            <p>Subscribe to our newsletter and receive the latest news and advice from the food world.</p>
-        </div>
-        <div class="col-md-4">
-            <input type="email" placeholder="Enter your email address" class="email border-bottom p-2 mx-2 w-50">
-            <button class="green-btn p-2 rounded-2">SUBSCRIBE</button>
+    <div class="container-fluid bg-secondary bg-dark bg-opacity-75 text-white py-5 px-3 pb-4">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h1 class="fs-2"> Subscribe to our newsletter</h1>
+                <p>Subscribe to our newsletter and receive the latest news and advice from the food world.</p>
+            </div>
+            <div class="col-md-4">
+                <input type="email" placeholder="Enter your email address" class="email border-bottom p-2 mx-2 w-50">
+                <button class="green-btn p-2 rounded-2">SUBSCRIBE</button>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- footer -->
-       <div class="container-fluid pt-5">
+    <div class="container-fluid pt-5">
 
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-3 border-top justify-content-around">
             <div class="col my-2">
@@ -503,12 +567,14 @@
             <div class="col col-6 my-2">
                 <h5 class="text-primary">About</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">About MJA Food safety</a>
+                    <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">About MJA
+                            Food safety</a>
                     </li>
-                   
-                    
+
+
                     <li class="nav-item mb-2"><a href="./faq.html" class="nav-link p-0 text-body-secondary">FAQ</a></li>
-                    <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-body-secondary">Contact us</a></li>
+                    <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-body-secondary">Contact
+                            us</a></li>
                 </ul>
             </div>
 

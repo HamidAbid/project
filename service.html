@@ -46,37 +46,125 @@
     <nav class="navbar navbar-expand-lg z-3 sticky-top w-100  px-2">
         <div class="container-fluid">
 
-            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="./index.html"> <img src="./assets/images/logo.png" class="img-fluid" alt=""></a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <!-- <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        
+        </button> -->
+
+
+            <div class="aside-bar">
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header ">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">ClOSE MENU</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <a href="./index.html" class="aside-links"> WELCOME</a>
+                        <hr>
+                        <a href="./customer.html" class="aside-links"> CUSTOMERS</a>
+                        <hr>
+                        <div class="accordion  " id="accordionExample">
+                            <div class="accordion-item  border-0">
+
+                                <a class="accordion-button nav-btn aside-links text-dark p-0 " data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Services
+                                </a>
+
+
+                                <div id="collapseOne" class="accordion-collapse collapse aside-links "
+                                    data-bs-parent="#accordionExample ">
+                                    <hr>
+                                    <div class="accordion-body  p-0  ">
+                                        <a href="./haccp-et-gfsi.html" class="aside-links ">HACCP AND GFSI</a>
+                                        <hr>
+                                        <a href="./audits.html" class="aside-links">AUDITS</a>
+                                        <hr>
+                                        <a href="./consulting.html" class="aside-links">CONSULTING SERVICES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="accordion-item  border-0">
+
+                                <a class="accordion-button nav-btn aside-links text-dark p-0" href="./training.html"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Training
+                                </a>
+
+
+                                <div id="collapseTwo" class="accordion-collapse collapse aside-links "
+                                    data-bs-parent="#accordionExample ">
+                                    <hr>
+                                    <div class="accordion-body  p-0  ">
+                                        <a href="./haccp.html" class="aside-links ">HACCP COURSE</a>
+                                        <hr>
+                                        <a href="./gfsi.html" class="aside-links">GFSI: SQF, FSSC 22000, BRCGS</a>
+                                        <hr>
+                                        <a href="./internal.html" class="aside-links">INTERNAL AUDITS</a>
+                                        <hr>
+                                        <a href="./fsma.html" class="aside-links">FSMA: PCQI</a>
+                                        <hr>
+                                        <a href="./commplemantry.html" class="aside-links">HACCP/GFSI COMPLEMENTRY
+                                            COURSES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <a href="./news.html" class="aside-links"> NEWS</a>
+                        <hr>
+                        <a href="./about.html" class="aside-links"> ABOUT</a>
+                        <hr>
+                        <a href="./faq.html" class="aside-links"> FAQ</a>
+                        <hr>
+                        <a href="./contact.html" class="aside-links"> CONTACT US</a>
+                        <hr>
+                        <a href="./index.html" class="aside-links"> WELCOME</a>
+                        <hr>
+
+                        <h5>Need Help? </h5>
+                        <p>Call: 450 304 4377</p>
+                    </div>
+
+
                 </div>
-                <div class="offcanvas-body">
+            </div>
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/logo.png" class="img-fluid" alt=""></a>
+            <div class=' offcanvas offcanvas-end' tabindex="-1" id="" aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-4">
                         <li><a href="./index.html" class="text-dark"><i class="fa-solid fa-house"></i></a></li>
-                        <li class="nav-item dropdown m-0 p-0 "><a href="./service.html" class="text-dark">Services</a>
-                            <a class=" text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-
-                           </a>
-                            
-                            <ul class="dropdown-menu dropdown-menu">
-                                <li><a class="dropdown-item  border-bottom" href="./haccp-et-gfsi.html">HACCP and GFSI</a></li>
-                                <li><a class="dropdown-item  border-bottom" href="./audits.html">Audits</a></li>
-                                 <li><a class="dropdown-item  " href="./consulting.html">Consulting services</a>
-                            </ul>  </li>   
-
-                            <li class="nav-item dropdown m-0 p-0 "><a href="./training.html" class="text-dark">Training</a>
-                            <a class=" text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown m-0 p-0 show">
+                            <a href="./service.html" class="text-dark ">Services</a>
+                           
 
                             </a>
-                            
-                            <ul class="dropdown-menu dropdown-menu">
+                         
+                                <ul class="dropdown-menu hide ">
+                                    <li><a class="dropdown-item  border-bottom" href="./haccp-et-gfsi.html">HACCP and
+                                            GFSI</a></li>
+                                    <li><a class="dropdown-item  border-bottom" href="./audits.html">Audits</a></li>
+                                    <li><a class="dropdown-item  " href="./consulting.html">Consulting services</a>
+                                </ul>
+                           
+
+                        </li>
+
+                        <li class="nav-item dropdown show m-0 p-0 "><a href="./training.html" class="text-dark">Training</a>
+                           
+
+                            <ul class="dropdown-menu hide dropdown-menu">
                                 <li><a class="dropdown-item  border-bottom" href="./haccp.html">HACCP Course</a></li>
                                 <li><a class="dropdown-item  border-bottom" href="./gfsi.html">GFSI: SQF, FSSC 22000,
                                         BRCGS</a></li>
@@ -85,10 +173,11 @@
                                 <li><a class="dropdown-item  border-bottom" href="./fsma.html">FSMA: PCQI</a></li>
                                 <li><a class="dropdown-item  " href="./commplemantry.html">HACCP/GFSI Complemantry
                                         Course</a></li>
-                            </ul>  </li> 
-                            
+                            </ul>
+                        </li>
+
                         <li><a href="./customer.html" class="text-dark ">Customers</a></li>
-                            <li><a href="./news.html" class="text-dark">News</a></li> 
+                        <li><a href="./news.html" class="text-dark">News</a></li>
                         <li><a href="./about.html" class="text-dark">About</a></li>
                         <li><a href="./faq.html" class="text-dark">FAQ</a></li>
                         <li><a href="./contact.html" class="text-dark">Contact Us</a></li>
@@ -99,7 +188,7 @@
 
             </div>
             <div class="nav-icons d-flex gap-2">
-                  <span class="px-1"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                <span class="px-1"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
                 <!-- <span class="px-1"><i class="fa-regular fa-heart fa-lg"></i></span> -->
                 <span class="px-1"><i class="fa-solid fa-bag-shopping fa-lg"></i></span>
                 <!-- <span class="px-1"> <i class="fa-regular fa-user fa-lg "></i></span> -->
@@ -114,16 +203,16 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid text-center p-3 px-5">
-        <h1 class="fs-1">HACCP (PCP) and GFSI (BRCGS, FSSC 22000, SQF) systems</h1>
-        <p class="fs-6 text-opacity-75">MJA Food safety offers comprehensive and customized services for the development of
+    <div class="container-fluid text-center p-3 px-5 first-para">
+        <h2 >HACCP (PCP) and GFSI (BRCGS, FSSC 22000, SQF) systems</h2>
+        <p class="fs-6 text-opacity-75 px-5">MJA Food safety offers comprehensive and customized services for the development of
             HACCP (PCP) and GFSI systems for the food industry. We work closely with your team to ensure that each
             system is aligned with the reality of your plant.</p>
     </div>
 
-    <div class="row w-100 justify-content-around p-3 bg-body-secondary bg-opacity-50 m-0">
-        <div class="col-lg-4 px-4">
-            <h1 class="pb-3 fs-1 text-primary">Our services for the food industry</h1>
+    <div class="row w-100 justify-content-around p-3  bg-body-secondary bg-opacity-50 m-0">
+        <div class="col-lg-4">
+            <h1 class="pb-3 fs-2 fw-bold text-primary">Our services for the food industry</h1>
             <div class="d-flex py-3">
                 <img src="./assets/images/tick.svg" class="img-fluid border ticks" alt="">
                 <span class="ps-3"><span class="fw-bold">Implementation of GFSI system :</span> Develop systems compliant with BRCGS, FSSC 22000, SQF
@@ -145,11 +234,11 @@
                     standards</span>
             </div>
         </div>
-        <div class="col-lg-4 text-center px-2 py-5 my-2">
+        <div class="col-lg-4 text-center py-5 my-2">
             <img src="./assets/images/img2.webp" class="img-fluid  text-center  py-4 " width="550px" alt="">
         </div>
-        <div class="col-lg-4 px-4">
-            <h1 class="pb-3 text-primary">Why Trust MJA Food safety?</h1>
+        <div class="col-lg-4">
+            <h1 class="pb-3 fs-2 fw-bold text-primary">Why Trust MJA Food safety?</h1>
             <div class="d-flex py-3">
                 <img src="./assets/images/tick.svg" class="img-fluid border ticks" alt="">
                 <span class="ps-3"><span class="fw-bold"> Professional, fast and confidential service :</span> Benefit from reliable expertise that respects your deadlines and your confidentiality

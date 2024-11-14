@@ -66,3 +66,10 @@ else{
 })
 
 
+// google translate function
+
+   
+
+function loadGoogleTranslate() {
+   new google.translate.TranslateElement("google-element");
+}

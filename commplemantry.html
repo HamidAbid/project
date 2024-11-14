@@ -47,40 +47,125 @@
     <nav class="navbar navbar-expand-lg z-3 sticky-top w-100  px-2">
         <div class="container-fluid">
 
-            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="./index.html"> <img src="./assets/images/logo.png" class="img-fluid"
-                    alt=""></a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <!-- <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        
+        </button> -->
+
+
+            <div class="aside-bar">
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header ">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">ClOSE MENU</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <a href="./index.html" class="aside-links"> WELCOME</a>
+                        <hr>
+                        <a href="./customer.html" class="aside-links"> CUSTOMERS</a>
+                        <hr>
+                        <div class="accordion  " id="accordionExample">
+                            <div class="accordion-item  border-0">
+
+                                <a class="accordion-button nav-btn aside-links text-dark p-0 " data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Services
+                                </a>
+
+
+                                <div id="collapseOne" class="accordion-collapse collapse aside-links "
+                                    data-bs-parent="#accordionExample ">
+                                    <hr>
+                                    <div class="accordion-body  p-0  ">
+                                        <a href="./haccp-et-gfsi.html" class="aside-links ">HACCP AND GFSI</a>
+                                        <hr>
+                                        <a href="./audits.html" class="aside-links">AUDITS</a>
+                                        <hr>
+                                        <a href="./consulting.html" class="aside-links">CONSULTING SERVICES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="accordion-item  border-0">
+
+                                <a class="accordion-button nav-btn aside-links text-dark p-0" href="./training.html"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Training
+                                </a>
+
+
+                                <div id="collapseTwo" class="accordion-collapse collapse aside-links "
+                                    data-bs-parent="#accordionExample ">
+                                    <hr>
+                                    <div class="accordion-body  p-0  ">
+                                        <a href="./haccp.html" class="aside-links ">HACCP COURSE</a>
+                                        <hr>
+                                        <a href="./gfsi.html" class="aside-links">GFSI: SQF, FSSC 22000, BRCGS</a>
+                                        <hr>
+                                        <a href="./internal.html" class="aside-links">INTERNAL AUDITS</a>
+                                        <hr>
+                                        <a href="./fsma.html" class="aside-links">FSMA: PCQI</a>
+                                        <hr>
+                                        <a href="./commplemantry.html" class="aside-links">HACCP/GFSI COMPLEMENTRY
+                                            COURSES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <a href="./news.html" class="aside-links"> NEWS</a>
+                        <hr>
+                        <a href="./about.html" class="aside-links"> ABOUT</a>
+                        <hr>
+                        <a href="./faq.html" class="aside-links"> FAQ</a>
+                        <hr>
+                        <a href="./contact.html" class="aside-links"> CONTACT US</a>
+                        <hr>
+                        <a href="./index.html" class="aside-links"> WELCOME</a>
+                        <hr>
+
+                        <h5>Need Help? </h5>
+                        <p>Call: 450 304 4377</p>
+                    </div>
+
+
                 </div>
-                <div class="offcanvas-body">
+            </div>
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/logo.png" class="img-fluid" alt=""></a>
+            <div class=' offcanvas offcanvas-end' tabindex="-1" id="" aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-4">
                         <li><a href="./index.html" class="text-dark"><i class="fa-solid fa-house"></i></a></li>
-                        <li class="nav-item dropdown m-0 p-0 "><a href="./service.html" class="text-dark">Services</a>
-                            <a class=" text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown m-0 p-0 show">
+                            <a href="./service.html" class="text-dark ">Services</a>
+                           
 
                             </a>
+                         
+                                <ul class="dropdown-menu hide ">
+                                    <li><a class="dropdown-item  border-bottom" href="./haccp-et-gfsi.html">HACCP and
+                                            GFSI</a></li>
+                                    <li><a class="dropdown-item  border-bottom" href="./audits.html">Audits</a></li>
+                                    <li><a class="dropdown-item  " href="./consulting.html">Consulting services</a>
+                                </ul>
+                           
 
-                            <ul class="dropdown-menu dropdown-menu">
-                                <li><a class="dropdown-item  border-bottom" href="./haccp-et-gfsi.html">HACCP and
-                                        GFSI</a></li>
-                                <li><a class="dropdown-item  border-bottom" href="./audits.html">Audits</a></li>
-                                <li><a class="dropdown-item  " href="./consulting.html">Consulting services</a>
-                            </ul>
                         </li>
 
-                        <li class="nav-item dropdown m-0 p-0 "><a href="./training.html" class="text-dark">Training</a>
-                            <a class=" text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown show m-0 p-0 "><a href="./training.html" class="text-dark">Training</a>
+                           
 
-                            </a>
-
-                            <ul class="dropdown-menu dropdown-menu">
+                            <ul class="dropdown-menu hide dropdown-menu">
                                 <li><a class="dropdown-item  border-bottom" href="./haccp.html">HACCP Course</a></li>
                                 <li><a class="dropdown-item  border-bottom" href="./gfsi.html">GFSI: SQF, FSSC 22000,
                                         BRCGS</a></li>
@@ -122,22 +207,17 @@
 
 
 
-    <div class="conatiner-fluid">
+    <div class="conatiner-fluid first-para">
         <div class="row p-2 w-100 m-0 justify-content-between">
             <div class="col-lg-3  p-4 side-bar" id="sideBar">
                 <h4 class="border-bottom my-1 mb-4">Browse Categories</h4>
-                <a href="./haccp.html" class='text-dark d-inline-block text-truncate' style="max-width: 220px;">HACCP
-                    course</a><br>
-                <a href="./gfsi.html" class='text-dark d-inline-block text-truncate' style="max-width: 220px;">GFSI:
-                    SQF, FSSC
+                <a href="./haccp.html" class=' d-inline-block text-truncate training-link' style="max-width: 220px;">HACCP course</a><br>
+                <a href="./gfsi.html" class=' d-inline-block text-truncate training-link' style="max-width: 220px;">GFSI: SQF, FSSC
                     22000, BRCGS</a><br>
-                <a href="./internal.html" class='text-dark d-inline-block text-truncate'
-                    style="max-width: 220px;">Internal
+                <a href="./internal.html" class=' d-inline-block text-truncate training-link' style="max-width: 220px;">Internal
                     Audits</a><br>
-                <a href="./fsma.html" class='text-dark d-inline-block text-truncate' style="max-width: 220px;">FSMA:
-                    PCQI</a><br>
-                <a href="./commplemantry.html" class='text-dark d-inline-block text-truncate'
-                    style="max-width: 220px;">HACCP/GFSI
+                <a href="./fsma.html" class=' d-inline-block text-truncate training-link' style="max-width: 220px;">FSMA: PCQI</a><br>
+                <a href="./commplemantry.html" class=' d-inline-block   text-primary text-truncate training-link' style="max-width: 220px;">HACCP/GFSI
                     Complemantry Course</a><br>
 
                 <br>
@@ -225,65 +305,66 @@
 
                 </div> 
 
-                <div>
-                    <h4 class="border-bottom my-2 mb-4">Latest Training</h4>
-                <div class="row my-3 py-2">
-                    <img src="./assets/images/img1.jpg" class="img-fluid col-5" alt="">
-                    <div class="info col-6">
-                        <h6 class="fs-6">Validation and verification</h6>
-                        <h6 class="text-primary fw-bold">$360.00 CAD</h6>
-                        <div><i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i> (0)
+                <div>-->
+                    <div>
+                        <h4 class="border-bottom my-2 mb-4">Latest Training</h4>
+                        <div class="row my-3 py-2">
+                            <img src="./assets/images/t1.jpg" class="img-fluid col-5" alt="">
+                            <div class="info col-6">
+                                <h6 class="fs-6">Validation and verification</h6>
+                                <h6 class="text-primary fw-bold">$360.00 CAD</h6>
+                                <div><i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i> (0)
+                                </div>
+                            </div>
+        
+                        </div> 
+                         <div class="row my-3 py-2">
+                            <img src="./assets/images/t2.jpg" class="img-fluid col-5" alt="">
+                            <div class="info col-6">
+                                <h6 class="fs-6">Environmental monitoring program</h6>
+                                <h6 class="text-primary fw-bold">$360.00 CAD</h6>
+                                <div><i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i> (0)
+                                </div>
+                            </div>
+        
                         </div>
-                    </div>
-                </div>
-
-                </div>
-                <div class="row my-3 py-2">
-                    <img src="./assets/images/img1.jpg" class="img-fluid col-5" alt="">
-                    <div class="info col-6">
-                        <h6 class="fs-6">Validation and verification</h6>
-                        <h6 class="text-primary fw-bold">$360.00 CAD</h6>
-                        <div><i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i> (0)
+                        <div class="row my-3 py-2">
+                            <img src="./assets/images/t3.jpg" class="img-fluid col-5" alt="">
+                            <div class="info col-6">
+                                <h6 class="fs-6">Food Fraud</h6>
+                                <h6 class="text-primary fw-bold">$360.00 CAD</h6>
+                                <div><i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i> (0)
+                                </div>
+                            </div>
+        
                         </div>
+                        <div class="row my-3 py-2">
+                            <img src="./assets/images/t4.jpg" class="img-fluid col-5" alt="">
+                            <div class="info col-6">
+                                <h6 class="fs-6">Allergan management</h6>
+                                <h6 class="text-primary fw-bold">$360.00 CAD</h6>
+                                <div><i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i> (0)
+                                </div>
+                            </div>
+        
+                        </div> 
                     </div>
-
-                </div>
-                <div class="row my-3 py-2">
-                    <img src="./assets/images/img1.jpg" class="img-fluid col-5" alt="">
-                    <div class="info col-6">
-                        <h6 class="fs-6">Validation and verification</h6>
-                        <h6 class="text-primary fw-bold">$360.00 CAD</h6>
-                        <div><i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i> (0)
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row my-3 py-2">
-                    <img src="./assets/images/img1.jpg" class="img-fluid col-5" alt="">
-                    <div class="info col-6">
-                        <h6 class="fs-6">Validation and verification</h6>
-                        <h6 class="text-primary fw-bold">$360.00 CAD</h6>
-                        <div><i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i> (0)
-                        </div>
-                    </div>
-
-                </div>-->
             </div>
             <div class="col-lg-9 p-4 m-0">
                 <div class="d-flex justify-content-between">
@@ -582,6 +663,10 @@
                 class="text-primary">Araknyd by Arkhame</span>
         </div>
     </div>
+
+      <!-- translator -->
+      <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
     <script src="./assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

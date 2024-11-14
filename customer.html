@@ -19,7 +19,7 @@
 <body>
     <div class="header container-fluid navbar-expand-md ">
         <div class="row justify-content-center py-2 px-4">
-            <div class="w-auto col-md-5">
+            <div class="w-auto col-lg-5">
                 <button class="btn btn-primary icon-size"><i class="fa-brands fa-linkedin-in fa-sm "></i></button>
                 <button class="btn btn-primary icon-size"><i class="fa-brands fa-x-twitter fa-sm "></i></button>
                 <button class="btn btn-primary icon-size"><i class="fa-brands fa-facebook-f fa-sm "></i></button>
@@ -46,37 +46,125 @@
     <nav class="navbar navbar-expand-lg z-3 sticky-top w-100  px-2">
         <div class="container-fluid">
 
-            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="./index.html"> <img src="./assets/images/logo.png" class="img-fluid" alt=""></a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <!-- <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        
+        </button> -->
+
+
+            <div class="aside-bar">
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header ">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">ClOSE MENU</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <a href="./index.html" class="aside-links"> WELCOME</a>
+                        <hr>
+                        <a href="./customer.html" class="aside-links"> CUSTOMERS</a>
+                        <hr>
+                        <div class="accordion  " id="accordionExample">
+                            <div class="accordion-item  border-0">
+
+                                <a class="accordion-button nav-btn aside-links text-dark p-0 " data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Services
+                                </a>
+
+
+                                <div id="collapseOne" class="accordion-collapse collapse aside-links "
+                                    data-bs-parent="#accordionExample ">
+                                    <hr>
+                                    <div class="accordion-body  p-0  ">
+                                        <a href="./haccp-et-gfsi.html" class="aside-links ">HACCP AND GFSI</a>
+                                        <hr>
+                                        <a href="./audits.html" class="aside-links">AUDITS</a>
+                                        <hr>
+                                        <a href="./consulting.html" class="aside-links">CONSULTING SERVICES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="accordion-item  border-0">
+
+                                <a class="accordion-button nav-btn aside-links text-dark p-0" href="./training.html"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Training
+                                </a>
+
+
+                                <div id="collapseTwo" class="accordion-collapse collapse aside-links "
+                                    data-bs-parent="#accordionExample ">
+                                    <hr>
+                                    <div class="accordion-body  p-0  ">
+                                        <a href="./haccp.html" class="aside-links ">HACCP COURSE</a>
+                                        <hr>
+                                        <a href="./gfsi.html" class="aside-links">GFSI: SQF, FSSC 22000, BRCGS</a>
+                                        <hr>
+                                        <a href="./internal.html" class="aside-links">INTERNAL AUDITS</a>
+                                        <hr>
+                                        <a href="./fsma.html" class="aside-links">FSMA: PCQI</a>
+                                        <hr>
+                                        <a href="./commplemantry.html" class="aside-links">HACCP/GFSI COMPLEMENTRY
+                                            COURSES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <a href="./news.html" class="aside-links"> NEWS</a>
+                        <hr>
+                        <a href="./about.html" class="aside-links"> ABOUT</a>
+                        <hr>
+                        <a href="./faq.html" class="aside-links"> FAQ</a>
+                        <hr>
+                        <a href="./contact.html" class="aside-links"> CONTACT US</a>
+                        <hr>
+                        <a href="./index.html" class="aside-links"> WELCOME</a>
+                        <hr>
+
+                        <h5>Need Help? </h5>
+                        <p>Call: 450 304 4377</p>
+                    </div>
+
+
                 </div>
-                <div class="offcanvas-body">
+            </div>
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/logo.png" class="img-fluid" alt=""></a>
+            <div class=' offcanvas offcanvas-end' tabindex="-1" id="" aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-4">
                         <li><a href="./index.html" class="text-dark"><i class="fa-solid fa-house"></i></a></li>
-                        <li class="nav-item dropdown m-0 p-0 "><a href="./service.html" class="text-dark">Services</a>
-                            <a class=" text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-
-                           </a>
-                            
-                            <ul class="dropdown-menu dropdown-menu">
-                                <li><a class="dropdown-item  border-bottom" href="./haccp-et-gfsi.html">HACCP and GFSI</a></li>
-                                <li><a class="dropdown-item  border-bottom" href="./audits.html">Audits</a></li>
-                                 <li><a class="dropdown-item  " href="./consulting.html">Consulting services</a>
-                            </ul>  </li>   
-
-                            <li class="nav-item dropdown m-0 p-0 "><a href="./training.html" class="text-dark">Training</a>
-                            <a class=" text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown m-0 p-0 show">
+                            <a href="./service.html" class="text-dark ">Services</a>
+                           
 
                             </a>
-                            
-                            <ul class="dropdown-menu dropdown-menu">
+                         
+                                <ul class="dropdown-menu hide ">
+                                    <li><a class="dropdown-item  border-bottom" href="./haccp-et-gfsi.html">HACCP and
+                                            GFSI</a></li>
+                                    <li><a class="dropdown-item  border-bottom" href="./audits.html">Audits</a></li>
+                                    <li><a class="dropdown-item  " href="./consulting.html">Consulting services</a>
+                                </ul>
+                           
+
+                        </li>
+
+                        <li class="nav-item dropdown show m-0 p-0 "><a href="./training.html" class="text-dark">Training</a>
+                           
+
+                            <ul class="dropdown-menu hide dropdown-menu">
                                 <li><a class="dropdown-item  border-bottom" href="./haccp.html">HACCP Course</a></li>
                                 <li><a class="dropdown-item  border-bottom" href="./gfsi.html">GFSI: SQF, FSSC 22000,
                                         BRCGS</a></li>
@@ -85,10 +173,11 @@
                                 <li><a class="dropdown-item  border-bottom" href="./fsma.html">FSMA: PCQI</a></li>
                                 <li><a class="dropdown-item  " href="./commplemantry.html">HACCP/GFSI Complemantry
                                         Course</a></li>
-                            </ul>  </li> 
-                            
+                            </ul>
+                        </li>
+
                         <li><a href="./customer.html" class="text-dark ">Customers</a></li>
-                            <li><a href="./news.html" class="text-dark">News</a></li> 
+                        <li><a href="./news.html" class="text-dark">News</a></li>
                         <li><a href="./about.html" class="text-dark">About</a></li>
                         <li><a href="./faq.html" class="text-dark">FAQ</a></li>
                         <li><a href="./contact.html" class="text-dark">Contact Us</a></li>
@@ -99,7 +188,7 @@
 
             </div>
             <div class="nav-icons d-flex gap-2">
-                  <span class="px-1"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                <span class="px-1"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
                 <!-- <span class="px-1"><i class="fa-regular fa-heart fa-lg"></i></span> -->
                 <span class="px-1"><i class="fa-solid fa-bag-shopping fa-lg"></i></span>
                 <!-- <span class="px-1"> <i class="fa-regular fa-user fa-lg "></i></span> -->
@@ -114,334 +203,366 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid text-center  px-5">
+    <div class="container-fluid text-center first-para px-5">
         <h1 class="fs-2">Because No One Says It Better Than Our Customers!</h1>
 
-    </div>
+   
 
 
 
-    <!-- Client Reviews -->
+        <!-- Client Reviews -->
 
-    <div class="row w-100 p-4 m-0 justify-content-evenly">
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/carousel-img12.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    The secret to a successful SQF certification starts with a strong team. Innovaltech was an integral
-                    part of our team in this project. Innovaltech's strength lies in their extensive factory experience
-                    and their ability to make us understand the smallest details of the SQF standard. The completion of
-                    this project would not have been possible without their professional and rigorous support. We will
-                    not hesitate to collaborate with Innovaltech in the future. Thanks again!
-                    <div class=" review-head">
-                        <h5 class="text-primary pt-4">CHANEL FOURNIER</h5>
-                        <h6>QUALITY SERVICE DIRECTOR</h6>
+        <div class="row w-100 my-5 m-0 justify-content-evenly ">
+            <div class="col-xl-4 col-lg-5  text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/carousel-img12.png" class="img-fluid img-border rounded-4 " alt="">
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/carousel-img10.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    I would like to express my satisfaction to Innovaltech, especially to Valérie Charest, for
-                    presenting the training ''FSPCA Preventive Controls for Human Food (PCQI training)''. The content of
-                    the training is very comprehensive. Valérie Charest is an outstanding speaker who masters her
-                    subject to perfection and adapts to her audience. I highly recommend and will not hesitate to use
-                    the services of Innovaltech again.
-                    <div class="review-head">
-                        <h5 class="text-primary pt-4">MEGAN VIGNAUD</h5>
-                        <h6>ASSISTANT QUALITY MANAGER</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/carousel-img11.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    The trainer's energy, receiving training from someone who is passionate is very enriching. The
-                    trainer makes the course very dynamic despite the heaviness of some chapters, she manages to keep us
-                    captivated. The content of the course was very complete and informative. It allowed me to see my
-                    gaps in my new functions and will allow me to better target the courses that I should take in order
-                    to be better equipped. Thank you very much.
-                    <div class="review-head">
-                        <h5 class="text-primary pt-4">MICHAEL TREMBLAY</h5>
-                        <h6>QUALITY ASSURANCE COORDINATOR</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/carousel-img1.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    We called upon Innovaltech for the implementation of the FSSC 22000 standard and we were very
-                    satisfied with the high quality of their service. Indeed, achieving our certification would have
-                    been much more difficult without their expertise and excellent advice. We would like to thank the
-                    Innovaltech team for their professionalism and extensive knowledge of the plant. In addition, we did
-                    not hesitate to work with them again for our internal audits.
-                    <div class=" review-head">
-                        <h5 class="text-primary pt-4">JOSÉE BOUDREAULT</h5>
-                        <h6>QUALITY ASSURANCE MANAGER</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/lam.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    The Innovaltech group supported us in restructuring our HACCP plan and maintaining our SQF quality
-                    certification. Innovaltech is a complete team that offers a very diverse service at the technical,
-                    documentary (procedures), training, very good knowledge at the production and maintenance level.
-                    They easily adapted to our work team.
-                    <div class="review-head">
-                        <h5 class="text-primary pt-4">MARIE-JOSÉE SAMSON</h5>
-                        <h6>QUALITY ASSURANCE DIRECTOR</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/cordon.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    We called on the Innovaltech team to support us in a major project. They were able to guide and
-                    advise us thanks to their expertise, their professionalism and respond to all our needs quickly and
-                    efficiently. We will not hesitate to call on Innovaltech in the future. Thank you and we look
-                    forward to hearing from you.
-                    <div class="review-head">
-                        <h5 class="text-primary pt-4">DARIUSZ HOLOTA</h5>
-                        <h6>DIRECTOR R&D-QA</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/fontaine.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    With Innovaltech we found training for the implementation of SQF standards. The training was very
-                    effective and dynamic. The trainers always have good examples to give, which makes the training very
-                    enjoyable. I highly recommend Inovaltech.
-                    <div class="review-head">
-                        <h5 class="text-primary pt-4">MELISSA LATIFI</h5>
-                        <h6>CEO</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/fruit.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    The secret to a successful SQF certification starts with a strong team. Innovaltech was an integral
-                    part of our team in this project. Innovaltech's strength lies in their extensive factory experience
-                    and their ability to make us understand the smallest details of the SQF standard. The completion of
-                    this project would not have been possible without their professional and rigorous support. We will
-                    not hesitate to collaborate with Innovaltech in the future. Thanks again!
-                    <div class=" review-head">
-                        <h5 class="text-primary pt-4">CHANEL FOURNIER</h5>
-                        <h6>QUALITY SERVICE DIRECTOR</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/gelpac.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class="  bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    At Fruit d'Or, we did business with the Innovaltech team for the preparation of our FSSC 22000
-                    renewal audits and for internal training, and they were able to deliver an efficient and very
-                    professional service in all circumstances. Among other things, I would like to highlight the
-                    relevance of Valérie's observations as a quality auditor, which allowed us to make great
-                    improvements to our management processes. Thank you for the quality service!
-
-                    <div class="review-head">
-                        <h5 class="text-primary pt-4">CHANEL FOURNIER</h5>
-                        <h6>QUALITY SERVICE DIRECTOR</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/maxi.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    With Innovaltech we found training for the implementation of SQF standards. The training was very
-                    effective and dynamic. The trainers always have good examples to give, which makes the training very
-                    enjoyable. I highly recommend Inovaltech.
-                    <div class=" review-head">
-                        <h5 class="text-primary pt-4">MATEUS CAMPOS</h5>
-                        <h6>QUALITY CHEMIST</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/nutrait.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    Examples of your experience. You took the time to explain well. Relaxed training. We save time,
-                    doing training in virtual format, but wow, it was my first, I think it's the future
-                    <div class=" review-head">
-                        <h5 class="text-primary pt-4">ALBERT LAFLÈCHE</h5>
-                        <h6>QUALITY ASSURANCE MANAGER</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-5 text-center ju p-2">
-            <div class="review">
-                <div class="img-container">
-                    <img src="./assets/images/sapato.png" class="img-fluid img-border rounded-4 " alt="">
-                </div>
-                <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
-                    <div class="review-new">
-                        <div class="review-para">
-                            The clauses of the BRC manual are sometimes ambiguous and Innovaltech was able to decipher
-                            everything for us. They had to adapt to the reality of our company and were attentive during
-                            certain
-                            uncertainties. Even after several obstacles during the development of the project, they were
-                            able to
-                            put the priorities in the right places. They have a very good knowledge of the food sector.
-                            The
-                            last
-                            training on GMP and allergens was given by Innovaltech and was very appreciated.
-                        </div>
-                        <div class="review-head">
-                            <h5 class="text-primary pt-4">VALÉRIE SAVARD</h5>
-                            <h6>QUALITY MANAGER</h6>
+                    <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        The secret to a successful SQF certification starts with a strong team. Innovaltech was an
+                        integral
+                        part of our team in this project. Innovaltech's strength lies in their extensive factory
+                        experience
+                        and their ability to make us understand the smallest details of the SQF standard. The completion
+                        of
+                        this project would not have been possible without their professional and rigorous support. We
+                        will
+                        not hesitate to collaborate with Innovaltech in the future. Thanks again!
+                        <div class=" review-head pt-5 ">
+                            <h5 class="text-primary pt-4">CHANEL FOURNIER</h5>
+                            <h6>QUALITY SERVICE DIRECTOR</h6>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-
-    <div class="container-fluid mb-5">
-        <h1 class="text-center"> Learn From Industry Expert</h1>
-        <div class="row justify-content-evenly text-center p-3">
-            <div class="col-md-5">
-                <h3 class="p-3">Contact Us Now For a free Quote!</h3>
-                <a href="./contact.html" class="orange-btn p-2 rounded m-2"> CONTACT US</a>
+            <div class="col-xl-4 col-lg-5 text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/carousel-img10.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        I would like to express my satisfaction to Innovaltech, especially to Valérie Charest, for
+                        presenting the training ''FSPCA Preventive Controls for Human Food (PCQI training)''. The
+                        content of
+                        the training is very comprehensive. Valérie Charest is an outstanding speaker who masters her
+                        subject to perfection and adapts to her audience. I highly recommend and will not hesitate to
+                        use
+                        the services of Innovaltech again.
+                        <div class="review-head pt-5">
+                            <h5 class="text-primary pt-4">MEGAN VIGNAUD</h5>
+                            <h6>ASSISTANT QUALITY MANAGER</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-            <h3>Develop your food safety skills!</h3>
-            <button class="orange-btn p-2 rounded m-2">Explore our training course</button>
-        </div>
-        </div>
-    </div>
-
-    <!-- news latter -->
-
-    <div class="container-fluid bg-secondary  bg-opacity-75 bg-dark bg-opacity-75 text-white py-5 px-3 pb-4">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <h1 class="fs-2"> Subscribe to our newsletter</h1>
-                <p>Subscribe to our newsletter and receive the latest news and advice from the food world.</p>
+            <div class="col-xl-4 col-lg-5 text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/carousel-img11.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        The trainer's energy, receiving training from someone who is passionate is very enriching. The
+                        trainer makes the course very dynamic despite the heaviness of some chapters, she manages to
+                        keep us
+                        captivated. The content of the course was very complete and informative. It allowed me to see my
+                        gaps in my new functions and will allow me to better target the courses that I should take in
+                        order
+                        to be better equipped. Thank you very much.
+                        <div class="review-head pt-5">
+                            <h5 class="text-primary pt-4">MICHAEL TREMBLAY</h5>
+                            <h6>QUALITY ASSURANCE COORDINATOR</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <input type="email" placeholder="Enter your email address" class="email border-bottom p-2 mx-2 w-50">
-                <button class="green-btn p-2 rounded-2">SUBSCRIBE</button>
+            <div class="col-xl-4 col-lg-5 text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/carousel-img1.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        We called upon Innovaltech for the implementation of the FSSC 22000 standard and we were very
+                        satisfied with the high quality of their service. Indeed, achieving our certification would have
+                        been much more difficult without their expertise and excellent advice. We would like to thank
+                        the
+                        Innovaltech team for their professionalism and extensive knowledge of the plant. In addition, we
+                        did
+                        not hesitate to work with them again for our internal audits.
+                        <div class=" review-head pt-5">
+                            <h5 class="text-primary pt-4">JOSÉE BOUDREAULT</h5>
+                            <h6>QUALITY ASSURANCE MANAGER</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="col-xl-4 col-lg-5 text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/lam.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class="bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        The Innovaltech group supported us in restructuring our HACCP plan and maintaining our SQF
+                        quality
+                        certification. Innovaltech is a complete team that offers a very diverse service at the
+                        technical,
+                        documentary (procedures), training, very good knowledge at the production and maintenance level.
+                        They easily adapted to our work team.
+                        <div class="review-head pt-5 pt-5">
+                            <h5 class="text-primary pt-4 ">MARIE-JOSÉE SAMSON</h5>
+                            <h6>QUALITY ASSURANCE DIRECTOR</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/cordon.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        We called on the Innovaltech team to support us in a major project. They were able to guide and
+                        advise us thanks to their expertise, their professionalism and respond to all our needs quickly
+                        and
+                        efficiently. We will not hesitate to call on Innovaltech in the future. Thank you and we look
+                        forward to hearing from you.
+                        <div class="review-head pt-5">
+                            <h5 class="text-primary pt-4">DARIUSZ HOLOTA</h5>
+                            <h6>DIRECTOR R&D-QA</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/fontaine.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        With Innovaltech we found training for the implementation of SQF standards. The training was
+                        very
+                        effective and dynamic. The trainers always have good examples to give, which makes the training
+                        very
+                        enjoyable. I highly recommend Inovaltech.
+                        <div class="review-head pt-5">
+                            <h5 class="text-primary pt-4">MELISSA LATIFI</h5>
+                            <h6>CEO</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/fruit.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        The secret to a successful SQF certification starts with a strong team. Innovaltech was an
+                        integral
+                        part of our team in this project. Innovaltech's strength lies in their extensive factory
+                        experience
+                        and their ability to make us understand the smallest details of the SQF standard. The completion
+                        of
+                        this project would not have been possible without their professional and rigorous support. We
+                        will
+                        not hesitate to collaborate with Innovaltech in the future. Thanks again!
+                        <div class=" review-head pt-5">
+                            <h5 class="text-primary pt-4">CHANEL FOURNIER</h5>
+                            <h6>QUALITY SERVICE DIRECTOR</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/gelpac.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class="  bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        At Fruit d'Or, we did business with the Innovaltech team for the preparation of our FSSC 22000
+                        renewal audits and for internal training, and they were able to deliver an efficient and very
+                        professional service in all circumstances. Among other things, I would like to highlight the
+                        relevance of Valérie's observations as a quality auditor, which allowed us to make great
+                        improvements to our management processes. Thank you for the quality service!
 
-    <!-- footer -->
-    <div class="container-fluid pt-5">
-
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-3 border-top justify-content-around">
-            <div class="col my-2">
-                <a href="/" class="d-flex align-items-center mb-2 link-body-emphasis text-decoration-none">
-                    <img src="./assets/images/logo.png" width="170px" alt="">
-                </a>
-
-                <div class="btns">
-                    <button class="btn btn-primary icon-size"><i class="fa-brands fa-linkedin-in fa-sm "></i></button>
-                    <button class="btn btn-primary icon-size"><i class="fa-brands fa-x-twitter fa-sm "></i></button>
-                    <button class="btn btn-primary icon-size"><i class="fa-brands fa-facebook-f fa-sm "></i></button>
-                    <a href="./contact.html" class="orange-btn rounded p-1 px-2 mx-1 fs-5">Contact us</a>
+                        <div class="review-head pt-5">
+                            <h5 class="text-primary pt-4">CHANEL FOURNIER</h5>
+                            <h6>QUALITY SERVICE DIRECTOR</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/maxi.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        With Innovaltech we found training for the implementation of SQF standards. The training was
+                        very
+                        effective and dynamic. The trainers always have good examples to give, which makes the training
+                        very
+                        enjoyable. I highly recommend Inovaltech.
+                        <div class=" review-head pt-5">
+                            <h5 class="text-primary pt-4">MATEUS CAMPOS</h5>
+                            <h6>QUALITY CHEMIST</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 text-center p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/nutrait.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        Examples of your experience. You took the time to explain well. Relaxed training. We save time,
+                        doing training in virtual format, but wow, it was my first, I think it's the future
+                        <div class=" review-head pt-5">
+                            <h5 class="text-primary pt-4">ALBERT LAFLÈCHE</h5>
+                            <h6>QUALITY ASSURANCE MANAGER</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 text-center ju p-2">
+                <div class="review">
+                    <div class="img-container">
+                        <img src="./assets/images/sapato.png" class="img-fluid img-border rounded-4 " alt="">
+                    </div>
+                    <div class=" bg-body-secondary  bg-opacity-75 rounded  review-body">
+                        <div class="review-new">
+                            <div class="review-para">
+                                The clauses of the BRC manual are sometimes ambiguous and Innovaltech was able to
+                                decipher
+                                everything for us. They had to adapt to the reality of our company and were attentive
+                                during
+                                certain
+                                uncertainties. Even after several obstacles during the development of the project, they
+                                were
+                                able to
+                                put the priorities in the right places. They have a very good knowledge of the food
+                                sector.
+                                The
+                                last
+                                training on GMP and allergens was given by Innovaltech and was very appreciated.
+                            </div>
+                            <div class="review-head pt-5">
+                                <h5 class="text-primary pt-4">VALÉRIE SAVARD</h5>
+                                <h6>QUALITY MANAGER</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-
-
-            <div class="col-md-4 my-2">
-                <h5 class="text-primary">Contact details</h5>
-                <div class="row">
-                    <div class="col">
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#"
-                                    class="nav-link p-0 text-body-secondary">Saint-Jerome</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Montreal</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Quebec</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Free of
-                                    charge</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">E-mail</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul class="nav flex-column ">
-                            <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 text-orange ">
-                                    (450) 304-4377</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-orange">
-                                    (514) 664-1164</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-orange">
-                                    (418) 522-2353</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-orange">
-                                    1-877-688-4377</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-orange">
-                                    info@MJAfoodsafety.ca</a></li>
-                        </ul>
-                    </div>
-
+        </div>
+    </div>
+        <div class="container-fluid mb-5">
+            <h1 class="text-center"> Learn From Industry Expert</h1>
+            <div class="row justify-content-evenly text-center p-3">
+                <div class="col-lg-5">
+                    <h4 class="p-3">Contact Us Now For a free Quote!</h4>
+                    <a href="./contact.html" class="orange-btn p-2 rounded m-2"> CONTACT US</a>
+                </div>
+                <div class="col-md-5">
+                    <h4 class="p-3">Develop your food safety skills!</h4>
+                    <a href="./training.html" class="orange-btn p-2 rounded m-2">Explore our training course</a>
                 </div>
             </div>
+        </div>
 
-            <div class="col col-6 my-2">
-                <h5 class="text-primary">About</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">About
-                            MJA Food safety</a>
-                    </li>
+        <!-- news latter -->
 
-
-                    <li class="nav-item mb-2"><a href="./faq.html" class="nav-link p-0 text-body-secondary">FAQ</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-body-secondary">Contact
-                            us</a></li>
-                </ul>
+        <div class="container-fluid bg-secondary m-0 bg-opacity-75 bg-dark bg-opacity-75 text-white py-5 px-3 pb-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h1 class="fs-2"> Subscribe to our newsletter</h1>
+                    <p>Subscribe to our newsletter and receive the latest news and advice from the food world.</p>
+                </div>
+                <div class="col-md-4">
+                    <input type="email" placeholder="Enter your email address"
+                        class="email border-bottom p-2 mx-2 w-50">
+                    <button class="green-btn p-2 rounded-2">SUBSCRIBE</button>
+                </div>
             </div>
+        </div>
 
-            <!-- <div class="col col-6 my-2">
+        <!-- footer -->
+        <div class="container-fluid pt-5">
+
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-3 border-top justify-content-around">
+                <div class="col my-2">
+                    <a href="/" class="d-flex align-items-center mb-2 link-body-emphasis text-decoration-none">
+                        <img src="./assets/images/logo.png" width="170px" alt="">
+                    </a>
+
+                    <div class="btns">
+                        <button class="btn btn-primary icon-size"><i
+                                class="fa-brands fa-linkedin-in fa-sm "></i></button>
+                        <button class="btn btn-primary icon-size"><i class="fa-brands fa-x-twitter fa-sm "></i></button>
+                        <button class="btn btn-primary icon-size"><i
+                                class="fa-brands fa-facebook-f fa-sm "></i></button>
+                        <a href="./contact.html" class="orange-btn rounded p-1 px-2 mx-1 fs-5">Contact us</a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4 my-2">
+                    <h5 class="text-primary">Contact details</h5>
+                    <div class="row">
+                        <div class="col">
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Saint-Jerome</a></li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Montreal</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Quebec</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Free of
+                                        charge</a></li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">E-mail</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 text-orange ">
+                                        (450) 304-4377</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-orange">
+                                        (514) 664-1164</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-orange">
+                                        (418) 522-2353</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-orange">
+                                        1-877-688-4377</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-orange">
+                                        info@MJAfoodsafety.ca</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col col-6 my-2">
+                    <h5 class="text-primary">About</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-secondary">About
+                                MJA Food safety</a>
+                        </li>
+
+
+                        <li class="nav-item mb-2"><a href="./faq.html" class="nav-link p-0 text-body-secondary">FAQ</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="./contact.html"
+                                class="nav-link p-0 text-body-secondary">Contact
+                                us</a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="col col-6 my-2">
                 <h5 class="text-primary">My Account</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Dashboard</a></li>
@@ -453,12 +574,17 @@
                 </ul>
             </div> -->
 
-        </footer>
-        <div class="container-fluid text-center mb-2">
-            © 2024 MJA Food safety - All rights reserved | <span class="text-primary">Design</span> by <span
-                class="text-primary">Araknyd by Arkhame</span>
+            </footer>
+
+            <div class="container-fluid text-center mb-2">
+                © 2024 MJA Food safety - All rights reserved | <span class="text-primary">Design</span> by <span
+                    class="text-primary">Araknyd by Arkhame</span>
+            </div>
         </div>
     </div>
+      <!-- translator -->
+      <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
     <script src="./assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
