@@ -16,6 +16,10 @@
   color: orange;
   width: max-content;
 }
+.orange-border{
+  border: 2px solid orange;
+  color: orange;
+}
 
 .orange-btn:hover {
   border: 2px solid rgb(3, 167, 196);
@@ -141,11 +145,18 @@ background: white !important;
 }
 
 .hero-bg {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.89), rgba(255, 255, 255, 0.527));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.89), rgba(255, 255, 255, 0.479));
   position: relative;
   height: inherit;
   padding-block-start: 80px; 
   padding-block-end: 200px; 
+}
+.product-bg{
+  background: linear-gradient(90deg, white, transparent);
+  position: relative;
+  height: inherit;
+  padding-block-start: 250px; 
+  padding-block-end: 80px;
 }
 .first-para{
   position: relative;
@@ -513,4 +524,10 @@ color: #0D6EFD;
  padding: 2px 5px;
  border-radius: 20px;
  
+}
+
+.comment{
+  box-sizing: border-box;
+  height: fit-content;
+
 }
