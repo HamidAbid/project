@@ -216,12 +216,13 @@
             </div>
         </div>
     </div>
-
-    <div class="container py-5 first-para">
-        <div class="hero">
-            <div id="calendar"></div>
-        </div>
-    </div>
+<div class="container-fluid">
+    
+   <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/mhamidabid301/new-meeting-1" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+</div>
 
 
 
@@ -342,33 +343,7 @@
     <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
     <script src="./assets/js/evo-calendar.min.js"></script>
 
-    <script>
-        // initialize your calendar, once the page's DOM is ready
-        $(document).ready(function () {
-            $('#calendar').evoCalendar({
-
-                calendarEvents: [
-                    {
-                        id: 'hamid', // Event's ID (required)
-                        name: "New Year", // Event name (required)
-                        date: "January/1/2024", // Event date (required)
-                        type: "holiday", // Event type (required)
-                        everyYear: true // Same event every year (optional)
-                    },
-                    {
-                        name: "Vacation Leave",
-                        badge: "02/13 - 02/15", // Event badge (optional)
-                        date: ["February/13/2020", "February/15/2020"], // Date range
-                        description: "Vacation leave for 3 days.", // Event description (optional)
-                        type: "event",
-                        color: "#63d867" // Event custom color (optional)
-                    }]
-            })
-        })
-
-
-
-    </script>
+  
 
   <!-- translator -->
   <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
