@@ -69,7 +69,23 @@ else{
 // google translate function
 
    
+    function loadGoogleTranslate() {
+            // Initialize Google Translate with the specified settings
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en', // Original language of the page
+                    autoDisplay: false, // Prevent widget display
+                },
+                'google-element'
+            );
 
-function loadGoogleTranslate() {
-   new google.translate.TranslateElement("google-element");
-}
+            // Automatically trigger translation to French once the widget loads
+            const interval = setInterval(() => {
+                const selectLanguage = document.querySelector('.goog-te-combo');
+                if (selectLanguage) {
+                    selectLanguage.value = 'fr'; // Set the language to French
+                    selectLanguage.dispatchEvent(new Event('change')); // Trigger the language change event
+                    clearInterval(interval); // Stop checking once the translation is applied
+                }
+            }, 700); // Check every 500ms until the widget is ready
+        }
